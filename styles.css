@@ -155,7 +155,7 @@ button:hover {
 }
 
 
-@media (min-width: 1440px) {
+@media (min-width: 800px) {
   body {
     height: 100vh;
     display: grid;
