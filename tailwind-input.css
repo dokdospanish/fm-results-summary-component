@@ -1,0 +1,48 @@
+/**
+ * This injects Tailwind's base styles and any base styles registered by
+ * plugins.
+ */
+ @tailwind base;
+
+ /**
+  * This injects Tailwind's component classes and any component classes
+  * registered by plugins.
+  */
+ @tailwind components;
+ 
+ /**
+  * This injects Tailwind's utility classes and any utility classes registered
+  * by plugins.
+  */
+ @tailwind utilities;
+
+
+ /* Use the @layer directive to tell Tailwind which “bucket” a set of custom styles belong to */
+
+@layer base {
+  a {
+    @apply underline font-bold text-blue-600 hover:text-blue-800
+  }
+}
+
+
+@font-face {
+  font-family: 'Hanken Grotesk';
+  src: url('./assets/fonts/static/HankenGrotesk-Medium.ttf');
+  /* font-weight: normal; */
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Hanken Grotesk';
+  src: url('./assets/fonts/static/HankenGrotesk-Bold.ttf');
+  /* font-weight: bold; */
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: 'Hanken Grotesk';
+  src: url('./assets/fonts/static/HankenGrotesk-ExtraBold.ttf');
+  /* font-weight: bolder; */
+  font-weight: 800;
+}
