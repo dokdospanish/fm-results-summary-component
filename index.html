@@ -5,74 +5,68 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="tailwind-output.css">
 
   <title>Frontend Mentor | Results summary component</title>
 
 </head>
-<body>
-  <main>
-    <section id="result-section">
-      <h2 class="seethru">Your Result</h2>
-      <div id="circle">
-        <span>76</span>
-        <span class="seethru">of 100</span>
-      </div>
+<body class="font-custom font-bold">
+  <main class="mx-auto rounded-3xl max-w-screen-sm md:shadow-2xl md:mt-24 md:grid md:grid-cols-2">
 
-      <h1>Great</h1>
-      <p class="seethru">You scored higher than 65% of the people who have taken these tests.</p>
+    <section class="bg-gradient-to-b from-slate-blue to-royal-blue text-white p-8 rounded-b-3xl flex flex-col justify-between items-center gap-2 md:rounded-3xl">
+      <h2 class="text-xl opacity-70">Your Results</h2>
+      <div class="bg-gradient-to-b from-violet-blue to-persian-blue m-6 w-44 aspect-square rounded-full grid place-content-center place-items-center">
+        <span class="text-6xl font-extrabold">76</span>
+        <span class="opacity-50">of 100</span>
+      </div>
+      <p class="text-2xl">Great</p>
+      <p class="text-center opacity-40 max-w-xs">You scored higher than 65% of the people who have taken these tests.</p>
     </section>
 
-    <section id="summary-section">
-      <h3>Summary</h3>
+    <section class="p-8 flex flex-col justify-between gap-2 md:rounded-3xl">
+      <h2 class="text-xl text-custom-dark mb-4">Summary</h2>
+      <div class="flex-grow flex flex-col gap-4 md:gap-2">
 
-      <div class="category">
-        <div>
+        <article class="bg-custom-red/5 p-3 rounded-lg flex">
           <img src="/assets/images/icon-reaction.svg"></img>
-          <span>Reaction</span>
-        </div>
-        <div>
-          <span>80 </span><span>/ 100</span>
-        </div>
-      </div>
-
-      <div class="category">
-        <div>
+          <span class="flex-grow ml-4 text-custom-red">Reaction</span>
+          <div>
+            <span class="text-custom-dark">80 </span><span class="text-custom-dark/60">/ 100</span>
+          </div>
+        </article>
+        
+        <article class="bg-custom-yellow/5 p-3 rounded-lg flex">
           <img src="/assets/images/icon-memory.svg"></img>
-          <span>Memory</span>
-        </div>
-        <div>
-          <span>92 </span><span>/ 100</span>
-        </div>
-      </div>
-
-      <div class="category">
-        <div>
+          <span class="flex-grow ml-4 text-custom-yellow">Memory</span>
+          <div>
+            <span class="text-custom-dark">92 </span><span class="text-custom-dark/60">/ 100</span>
+          </div>
+        </article>
+        
+        <article class="bg-custom-green/5 p-3 rounded-lg flex">
           <img src="/assets/images/icon-verbal.svg"></img>
-          <span>Verbal</span>
-        </div>
-        <div>
-          <span>61 </span><span>/ 100</span>
-        </div>
-      </div>
-
-      <div class="category">
-        <div>
+          <span class="flex-grow ml-4 text-custom-green">Verbal</span>
+          <div>
+            <span class="text-custom-dark">61 </span><span class="text-custom-dark/60">/ 100</span>
+          </div>
+        </article>
+        
+        <article class="bg-custom-blue/5 p-3 rounded-lg flex">
           <img src="/assets/images/icon-visual.svg"></img>
-          <span>Visual</span>
-        </div>
-        <div>
-          <span>72 </span><span>/ 100</span>
-        </div>
+          <span class="flex-grow ml-4 text-custom-blue">Visual</span>
+          <div>
+            <span class="text-custom-dark">72 </span><span class="text-custom-dark/60">/ 100</span>
+          </div>
+        </article>
       </div>
-
-      <button>Continue</button>
+      <button class="text-white rounded-full p-3 mt-6 bg-custom-dark hover:bg-gradient-to-b from-slate-blue to-royal-blue">Continue</button>
     </section>
   </main>
-  
-  <div class="attribution">
+
+  <footer class="p-8 text-xs text-center">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="https://github.com/dokdospanish/">Dokdo Spanish</a>.
-  </div>
+  </footer>
+
 </body>
 </html>
