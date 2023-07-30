@@ -18,3 +18,5 @@
 # Me
 design/
 node_modules
+# Local Netlify folder
+.netlify
