@@ -3,7 +3,3 @@ publish = "public"
 
 [build]
 publish = "public"
-
-[[redirects]]
-from = "/"
-to = "/results/"
